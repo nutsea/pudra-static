@@ -1,0 +1,107 @@
+.SalesContainer {
+    min-height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(228, 224, 221);
+    min-height: calc(100vh - 50px);
+}
+
+.SalesSub {
+    font-family: Vetrino;
+    font-size: 3.5vw;
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+    margin-bottom: 50px;
+}
+
+.Sales {
+    width: 85%;
+    color: rgb(70, 70, 70);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.Sale {
+    width: calc(48% - 40px);
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.SaleSub {
+    font-family: Vetrino;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.SaleText span {
+    font-family: Montserrat;
+}
+
+.SaleInfo {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.SaleInfo span {
+    font-family: Montserrat;
+}
+
+.SalesWarning {
+    width: 85%;
+    opacity: 0.5;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.SalesWarning span {
+    font-family: Outfit;
+}
+
+@media (max-width: 810px) {
+    .Sale {
+        width: 100%;
+    }
+}
+
+@media (max-width: 485px) {
+    .SalesSub {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .SaleSub {
+        font-size: 25px;
+    }
+
+    .SaleText {
+        font-size: 14px;
+    }
+
+    .SaleInfo {
+        font-size: 12px;
+    }
+
+    .SalesWarning {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    .SalesSub {
+        font-size: 30px;
+    }
+
+    .SaleSub {
+        font-size: 23px;
+    }
+}

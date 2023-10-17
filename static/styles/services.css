@@ -1,0 +1,219 @@
+.ServicesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 50px);
+}
+
+.EconomType {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(111, 114, 142, 0.8);
+}
+
+.PremiumType {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(228, 224, 221);
+}
+
+.ChildrenType {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(215, 118, 170);
+}
+
+.TypeImg {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    overflow: hidden;
+}
+
+.TypeImg img {
+    width: 100%;
+    transition: transform 0.2s linear, filter 0.2s linear;
+    filter: grayscale(1);
+}
+
+.TypeImg img:hover {
+    transform: scale(1.02);
+    filter: grayscale(0);
+}
+
+.TypeDesc {
+    width: calc(50% - 50px - 7.5vw);
+}
+
+.TypeDescRight {
+    padding: 50px 7.5vw 50px 50px;
+}
+
+.TypeDescLeft {
+    padding: 50px 50px 50px 7.5vw;
+}
+
+.TypeDescLight {
+    color: white;
+}
+
+.TypeDescDark {
+    color: rgb(70, 70, 70);
+}
+
+.TDSub {
+    font-family: Vetrino;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.TDList {
+    font-family: Raleway;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.TDItem {
+    margin-bottom: 10px;
+}
+
+.TDItem span {
+    font-family: Montserrat;
+}
+
+.TDBook {
+    margin-top: 30px;
+    font-family: Raleway;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    height: 45px;
+    display: flex;
+    width: fit-content;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.TDBookLight {
+    color: white;
+    border: solid 1px white;
+}
+
+.TDBookLight:hover {
+    color: rgb(69, 71, 88);
+    background-color: white;
+}
+
+.TDBookDark {
+    color: rgb(70, 70, 70);
+    border: solid 1px rgb(70, 70, 70);
+}
+
+.TDBookDark:hover {
+    color: white;
+    background-color: rgb(70, 70, 70);
+}
+
+.TDBookPink {
+    color: white;
+    border: solid 1px white;
+}
+
+.TDBookPink:hover {
+    color: rgb(215, 118, 170);
+    background-color: white;
+}
+
+.TDPrice {
+    font-family: Montserrat;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.TDPrice span {
+    font-family: Raleway;
+    font-size: 17px;
+}
+
+.TDPriceLight {
+    background-color: white;
+    color: rgb(69, 71, 88);
+}
+
+.TDPriceDark {
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+.TDPricePink {
+    background-color: white;
+    color: rgb(215, 118, 170);
+}
+
+.TDBookBtn {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+@media (max-width: 1280px) {
+    .TDSub {
+        font-size: 40px;
+    }
+
+    .TDList {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .EconomType, .ChildrenType {
+        flex-direction: column;
+    }
+
+    .PremiumType {
+        flex-direction: column-reverse;
+    }
+
+    .TypeImg img {
+        filter: grayscale(0);
+    }
+
+    .TypeImg {
+        width: 100%;
+    }
+
+    .TypeDesc {
+        width: 85%;
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .TDSub {
+        font-size: 35px;
+    }
+
+    .TDList {
+        font-size: 16px;
+    }
+
+    .TDBook {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .TDSub {
+        font-size: 30px;
+    }
+}

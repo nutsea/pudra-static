@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    background-color: unset;
+    border-radius: unset;
+    border: unset;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Vetrino;
+    src: url('../fonts/Vetrino.ttf');
+}
+
+@font-face {
+    font-family: NeutralFace;
+    src: url('../fonts/NeutralFace.otf');
+}
+
+@font-face {
+    font-family: NeutralFaceBold;
+    src: url('../fonts/NeutralFace-Bold.otf');
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: fit-content;
+    font-family: Raleway;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.Content {
+    margin-top: 50px;
+    min-height: calc(100vh - 50px);
+    max-width: 100vw;
+    background-color: white;
+}
+
+.Lock {
+    position: fixed;
+}
+
+.None {
+    display: none !important;
+}
+
+.LoaderContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Loader {
+    width: 45px;
+    height: 40px;
+    background:
+        linear-gradient(#0000 calc(1 * 100% / 6), rgb(215, 118, 170) 0 calc(3 * 100% / 6), #0000 0),
+        linear-gradient(#0000 calc(2 * 100% / 6), rgb(215, 118, 170) 0 calc(4 * 100% / 6), #0000 0),
+        linear-gradient(#0000 calc(3 * 100% / 6), rgb(215, 118, 170) 0 calc(5 * 100% / 6), #0000 0);
+    background-size: 10px 400%;
+    background-repeat: no-repeat;
+    animation: matrix 1s infinite linear;
+}
+
+@keyframes matrix {
+    0% {
+        background-position: 0% 100%, 50% 100%, 100% 100%
+    }
+
+    100% {
+        background-position: 0% 0%, 50% 0%, 100% 0%
+    }
+}
+
+.BackLinks {
+    margin: 30px 0 30px 0;
+    width: 85%;
+    font-size: 14px;
+    color: rgba(70, 70, 70, 0.7);
+}
+
+.BackLinks a:hover {
+    text-decoration: underline;
+}
+
+.ActiveLink {
+    color: rgb(70, 70, 70);
+}

@@ -1,0 +1,465 @@
+.MainContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    min-height: calc(100vh - 50px);
+}
+
+.SliderRow {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    max-height: 2000px;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    position: relative;
+}
+
+.MainLogoContainer {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo {
+    font-family: Vetrino;
+    font-size: 18vw;
+    color: white;
+    line-height: 17vw;
+    opacity: 0.5;
+}
+
+.LogoSub {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+    opacity: 0.5;
+    margin-bottom: 5vw;
+}
+
+.MainPhoto {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-image: url('../img/Tan17.JPG');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+}
+
+.MainTextContainer {
+    width: 100%;
+    height: fit-content;
+    padding: 50px 0;
+}
+
+.MainTextBorder {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    border-top: solid 1px rgb(70, 70, 70);
+    border-bottom: solid 1px rgb(70, 70, 70);
+}
+
+.MTImg {
+    border-right: solid 1px rgb(70, 70, 70);
+    width: calc(50% - 1px);
+    display: flex;
+}
+
+.MTImg img {
+    width: 100%;
+}
+
+.MTText {
+    width: calc(50% - 2.5vw);
+    min-height: 100%;
+    padding: 50px 2.5vw 50px 0;
+    font-family: Raleway;
+    color: rgb(70, 70, 70);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.MTTSub {
+    width: 70%;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    font-family: Vetrino;
+    margin-bottom: 20px;
+}
+
+.MTTPar {
+    width: 70%;
+    font-size: 16px;
+    font-family: Raleway;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.MTTAboutUs {
+    width: 70%;
+    font-family: Raleway;
+}
+
+.MTTBtn {
+    width: fit-content;
+    position: relative;
+    height: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.MTTBtn::before {
+    content: '';
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(70, 70, 70);
+}
+
+.MTTBtn:after {
+    content: '';
+    position: absolute;
+    top: calc(100% - 1px);
+    left: -200%;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(70, 70, 70);
+}
+
+.MTTBtn:hover::before {
+    animation: aboutUsLine 1s;
+}
+
+.MTTBtn:hover::after {
+    animation: aboutUsLine 1s;
+}
+
+@keyframes aboutUsLine {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+.TanDescriptionContainer {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(111, 114, 142, 0.8);
+}
+
+.TanDescription {
+    font-family: Raleway;
+    color: white;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.TanAbout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TanDSub {
+    font-family: Vetrino;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.TanDPar {
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.TanSteps {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -50px;
+}
+
+.OneStep {
+    margin-top: 50px;
+    margin: 50px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    font-family: Raleway;
+}
+
+.StepImg {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.StepImg img {
+    width: 100%;
+}
+
+.StepCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.StepSub {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.StepSubNum {
+    font-family: Montserrat;
+}
+
+.StepLine {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.StepDesc {
+    font-size: 14px;
+}
+
+.ServicesBtn {
+    font-family: Raleway;
+    width: 300px;
+    height: 50px;
+    font-weight: 500;
+    color: rgb(69, 71, 88);
+    background-color: rgba(255, 255, 255);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s linear, transform 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+}
+
+.ServicesBtn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ServicesBtn:active {
+    transform: scale(0.98);
+}
+
+.ServicesBtn a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1750px) {
+    .LogoSub {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .LogoSub {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .LogoSub {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .LogoSub {
+        font-size: 25px;
+    }
+
+    .MainTextBorder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MTImg {
+        width: 100%;
+        border-right: none;
+        border-bottom: solid 1px rgb(70, 70, 70);
+    }
+
+    .MTText {
+        width:  85%;
+        padding: 50px 0;
+        align-items: flex-start;
+    }
+
+    .MTTSub {
+        width: 100%;
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .MTTPar {
+        width: 100%;
+    }
+        
+    .TanDSub {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 880px) {
+    .LogoSub {
+        font-size: 20px;
+    }
+
+    .TanSteps {
+        display: flex;
+        width: unset;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: -70px;
+    }
+
+    .OneStep {
+        flex-direction: row;
+        width: unset;
+        margin: 70px 0 0 0;
+    }
+
+    .StepImg {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+    .StepCol {
+        width: 250px;
+    }
+}
+
+@media (max-width: 720px) {
+    .Logo {
+        font-size: 180px;
+        line-height: 170px;
+    }
+
+    .LogoSub {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .Logo {
+        font-size: 160px;
+        line-height: 150px;
+    }
+
+    .LogoSub {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 560px) {
+    .Logo {
+        font-size: 140px;
+        line-height: 130px;
+    }
+
+    .LogoSub {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .StepImg {
+        width: 15vw;
+        margin-right: 5vw;
+    }
+
+    .StepCol {
+        width: 250px;
+        width: 65vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .Logo {
+        font-size: 120px;
+        line-height: 110px;
+    }
+
+    .LogoSub {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .Logo {
+        font-size: 100px;
+        line-height: 95px;
+    }
+
+    .LogoSub {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Logo {
+        font-size: 90px;
+        line-height: 85px;
+    }
+
+    .LogoSub {
+        font-size: 14px;
+    }
+
+    .ServicesBtn {
+        font-size: 14px;
+        width: 270px;
+    }
+}
+
+@media (max-width: 360px) {
+    .Logo {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .LogoSub {
+        font-size: 12px;
+    }
+}

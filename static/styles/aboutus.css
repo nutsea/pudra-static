@@ -1,0 +1,384 @@
+.AboutUsContainer {
+    min-height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(228, 224, 221);
+}
+
+.AboutSub {
+    width: 85%;
+    margin-bottom: 30px;
+    font-family: Vetrino;
+    font-size: 35px;
+    color: rgb(70, 70, 70);
+}
+
+.AboutRow {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(70, 70, 70);
+    margin-bottom: 50px;
+}
+
+.AboutUsText {
+    width: 50%;
+}
+
+.AboutPar {
+    margin-bottom: 10px;
+}
+
+.AboutNumbers {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.AboutNum {
+    margin-bottom: 30px;
+}
+
+.NumSub {
+    font-weight: 600;
+    color: rgb(215, 118, 170);
+    font-family: Vetrino;
+    font-size: 30px;
+}
+
+.Contacts {
+    margin-top: 30px;
+}
+
+.ContactName {
+    opacity: 0.7;
+    display: flex;
+    align-items: flex-end;
+}
+
+.ContactPhone {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Montserrat;
+    display: flex;
+    align-items: flex-end;
+}
+
+.ContactPhone:hover {
+    text-decoration: underline;
+}
+
+.ContactEmail {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+}
+
+.ContactEmail:hover {
+    text-decoration: underline;
+}
+
+.MapContainer {
+    width: 85%;
+    margin-bottom: 50px;
+}
+
+.MapSub {
+    width: 85%;
+    margin: 30px 0;
+    font-family: Vetrino;
+    font-size: 35px;
+    color: rgb(70, 70, 70);
+}
+
+.AboutUsMap {
+    border: none;
+    width: 600px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.ReviewsSub {
+    width: 85%;
+    margin: 30px 0;
+    font-family: Vetrino;
+    font-size: 35px;
+    color: rgb(70, 70, 70);
+}
+
+.ReviewsBox {
+    width: 85%;
+}
+
+.ReviewsContainer {
+    width: 410px;
+    overflow: hidden;
+}
+
+.ReviewsRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: stretch;
+    transition: transform 0.5s ease;
+}
+
+.Review {
+    min-width: 350px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: rgba(70, 70, 70);
+    color: white;
+    border-radius: 5px;
+}
+
+.Review + .Review {
+    margin-left: 20px;
+}
+
+.ReviewName {
+    font-family: Vetrino;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.ReviewText {
+    margin-bottom: 15px;
+}
+
+.RevImgRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.ReviewImgBtn {
+    width: 100px;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.ReviewImgBtn + .ReviewImgBtn {
+    margin-left: 5px;
+}
+
+.ReviewImg {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.ReviewsBtns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.ReviewLeft, .ReviewRight {
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    opacity: 0.5;
+    cursor: unset;
+    transition: opacity 0.2s linear;
+}
+
+.ReviewLeft img, .ReviewRight img {
+    height: 50px;
+    width: 50px;
+}
+
+.ReviewRight {
+    transform: rotate(180deg);
+}
+
+.Left2, .Right2 {
+    display: none;
+}
+
+.ActiveRevBtn {
+    opacity: 1 !important;
+    cursor: pointer !important;
+}
+
+.ImgModalContainer {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Images {
+    display: flex;
+    flex-direction: column;
+}
+
+.ImgContainer {
+    position: relative;
+}
+
+.CloseModal {
+    position: absolute;
+    left: calc(100% - 50px);
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CloseModal img {
+    height: 20px;
+    width: 20px;
+}
+
+.ImgModal {
+    max-height: 80vh;
+    max-width: 85vw;
+    border-radius: 5px;
+}
+
+.ImgBtns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.ImgLeft, .ImgRight {
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    opacity: 0.5;
+    cursor: unset;
+    transition: opacity 0.2s linear;
+}
+
+.ImgRight {
+    transform: rotate(180deg);
+}
+
+.ImgLeft img, .ImgRight img {
+    height: 50px;
+    width: 50px;
+}
+
+.ActiveImgBtn {
+    opacity: 1 !important;
+    cursor: pointer !important;
+}
+
+@media (max-width: 900px) {
+    .AboutRow {
+        flex-direction: column;
+    }
+
+    .AboutUsText {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .AboutNumbers {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .NumbersInfo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .AboutNum + .AboutNum {
+        margin-left: 80px;
+    }
+
+    .Contacts {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ContactPhone, .ContactEmail {
+        margin: 0 0 0 30px;
+    }
+}
+
+@media (max-width: 710px) {
+    .AboutUsMap {
+        width: 100%;
+        height: calc(85vw * 2 / 3);
+    }
+}
+
+@media (max-width: 560px) {
+    .Contacts {
+        flex-direction: column;
+    }
+
+    .ContactPhone, .ContactEmail {
+        margin: 10px 0 0 0;
+    }
+}
+
+@media (max-width: 485px) {
+    .AboutSub, .MapSub, .ReviewsSub {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .AboutRow, .MapContainer {
+        margin-bottom: 20px;
+    }
+
+    .NumbersInfo {
+        flex-direction: column;
+    }
+
+    .AboutNum + .AboutNum {
+        margin-left: 0;
+    }
+
+    .Left1, .Right1 {
+        display: none;
+    }
+
+    .Left2, .Right2 {
+        display: block;
+    }
+
+    .ReviewsContainer {
+        width: 85vw;
+    }
+
+    .Review {
+        min-width: calc(85vw - 60px);
+        min-width: calc(85vw - 60px);
+    }
+}
+
+/* @media (max-width: 350px) {
+    .AboutUsSub, .MapSub, .ReviewsSub {
+        font-size: 30px;
+    }
+} */

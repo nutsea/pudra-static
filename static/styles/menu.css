@@ -1,0 +1,83 @@
+.Menu {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 11;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 100%;
+    transition: left 0.2s ease;
+    overflow: scroll;
+}
+
+.MenuItems {
+    margin: 115px 5vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 29px;
+    font-weight: 200;
+}
+
+.MenuItem {
+    margin-bottom: 50px;
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.MenuItem::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 0;
+    top: 100%;
+    background-color: black;
+}
+
+.MenuItem:hover {
+    transform: scale(1.1);
+}
+
+
+.PinkItem {
+    color: rgb(215, 118, 170);
+}
+
+.ActiveMenu {
+    left: 0;
+}
+
+@media (max-width: 960px) {
+    .Menu {
+        display: block;
+    }
+}
+
+@media (max-width: 750px) {
+    .Menu {
+        width: 100vw;
+    }
+
+    .ActiveMenu {
+        left: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .MenuItems {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 360px) {
+    .MenuItems {
+        font-size: 20px;
+    }
+}

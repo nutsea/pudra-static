@@ -1,0 +1,115 @@
+.TipsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(228, 224, 221);
+    min-height: calc(100vh - 50px);
+}
+
+.Tip {
+    width: 85%;
+    height: fit-content;
+    background-color: rgb(228, 224, 221);
+    color: rgb(70, 70, 70);
+    margin-bottom: 50px;
+}
+
+.TipSub {
+    font-family: Vetrino;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.TipContent {
+    font-family: Raleway;
+    font-size: 16px;
+}
+
+.TipPar + .TipPar {
+    margin-top: 10px;
+}
+
+.TipPar span {
+    font-weight: 700;
+}
+
+.TipLine {
+    width: 85%;
+    height: 1px;
+    background-color: rgba(70, 70, 70, 0.2);
+}
+
+.TipsSub {
+    font-family: Vetrino;
+    font-size: 3.5vw;
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+    margin-bottom: 50px;
+}
+
+.Tips {
+    width: 85%;
+    color: rgb(70, 70, 70);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.TipCard {
+    width: calc(48% - 40px);
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.TipName {
+    font-family: Vetrino;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.TipDesc span {
+    font-family: Montserrat;
+}
+
+@media (max-width: 810px) {
+    .TipCard {
+        width: 100%;
+    }
+}
+
+@media (max-width: 485px) {
+    .TipsSub {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .TipSub {
+        font-size: 25px;
+    }
+
+    .TipName {
+        font-size: 25px;
+    }
+
+    .TipDesc {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .TipsSub {
+        font-size: 30px;
+    }
+
+    .TipName {
+        font-size: 23px;
+    }
+}

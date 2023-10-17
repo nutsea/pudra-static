@@ -1,0 +1,357 @@
+.Footer {
+    position: relative;
+    z-index: 10;
+    min-height: 100px;
+    max-width: 100vw;
+    background-color: black;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.FooterContent {
+    min-width: calc(100% - 15vw);
+    padding: 30px 7.5vw;
+    background-color: rgb(58, 57, 55);
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.FirstWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.LogoContainerFooter {
+    display: flex;
+    flex-direction: column;
+    width: 215px;
+}
+
+.LogoFooter {
+    width: fit-content;
+    font-family: Vetrino;
+    font-size: 29px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: opacity 0.2s linear, transform 0.2s linear;
+}
+
+.LogoFooter:hover {
+    opacity: 0.7;
+}
+
+.LogoFooter:active {
+    transform: scale(0.95);
+}
+
+.PudraDescription {
+    color: white;
+    font-family: Raleway;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.LinksContainerFooter {
+    width: 160px;
+    font-family: Raleway;
+    color: white;
+    font-size: 16px;
+}
+
+.LinkFooter {
+    width: fit-content;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.LinkFooter::before {
+    content: '';
+    background-color: white;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: calc(100% - 1px);
+    left: -100%;
+    transition: left 0.5s ease;
+}
+
+.LinkFooter:hover::before {
+    left: 100%;
+}
+
+.LinkFooter:active {
+    transform: scale(0.95);
+}
+
+
+.LinkFooter+.LinkFooter {
+    margin-top: 20px;
+}
+
+
+.MediaContainerFooter {
+    width: 325px;
+    font-family: Raleway;
+    color: white;
+    font-size: 16px;
+}
+
+.MediaSubFooter {
+    margin-bottom: 20px;
+}
+
+.MediaLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.MediaLink {
+    height: 20px;
+    width: 20px;
+}
+
+.MediaLink img {
+    height: 100%;
+    width: 100%;
+}
+
+.MediaLink + .MediaLink {
+    margin-left: 20px;
+}
+
+.SecondWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 480px;
+}
+
+.AddressContainerFooter {
+    width: 225px;
+}
+
+.AddressFooter {
+    font-family: Raleway;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.AddressFooter span {
+    font-family: Montserrat;
+}
+
+.PhoneFooter {
+    font-family: Montserrat;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.PudraMap img {
+    border: solid 1px rgb(70, 70, 70);
+    height: 150px;
+    width: 223px;
+    border-radius: 5px;
+}
+
+.FooterBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PudraRules {
+    font-size: 12px;
+    font-family: Raleway;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
+}
+
+.PudraRules span {
+    font-family: Montserrat;
+}
+
+
+.Developer {
+    font-size: 12px;
+    font-family: Raleway;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+}
+
+.DevLink {
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.2s linear, transform 0.2s linear;
+}
+
+.DevLink:hover {
+    text-decoration: underline;
+}
+
+.DevLink:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 1390px) {
+    .FooterTop {
+        width: 100%;
+    }
+
+    .FirstWrap {
+        width: calc(100% - 480px);
+    }
+
+    .MediaContainerFooter {
+        width: 290px;
+        margin-right: 10px;
+    }
+
+    .LinksContainerFooter {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .LinksContainerFooter {
+        width: 140px;
+    }
+
+    .MediaContainerFooter {
+        width: 220px;
+        width: 30%;
+    }
+}
+
+@media (max-width: 1230px) {
+    .FooterTop {
+        flex-direction: column;
+    }
+
+    .FirstWrap {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .MediaContainerFooter {
+        width: 290px;
+    }
+
+    .SecondWrap {
+        min-width: unset;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .AddressContainerFooter {
+        width: 48%;
+        margin: 0;
+    }
+
+    .PudraMap img {
+        width: calc(100% - 2px);
+        height: unset;
+    }
+}
+
+@media (max-width: 846px) {
+    .FirstWrap {
+        flex-direction: column; 
+    }
+
+    .FooterLine {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .LogoContainerFooter {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .LinksContainerFooter {
+        margin: 40px 0;
+    }
+
+    .MediaContainerFooter {
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    .PudraDescription {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .AddressFooter {
+        max-width: 330px;
+    }
+}
+
+@media (max-width: 580px) {
+    .MediaSubFooter {
+        font-size: 16px;
+    }
+
+    .MediaLink {
+        height: 30px;
+        width: 30px;
+    }
+
+    .MediaLink + .MediaLink {
+        margin-left: 40px;
+    }
+
+    .VKLink {
+        height: 45px;
+        width: 45px;
+    }
+
+    .FooterLine2 + .AddressContainerFooter {
+        margin-left: 0;
+    }
+
+    .SecondWrap {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .SecondWrap {
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    .AddressContainerFooter {
+        width: 100%;
+    }
+
+    .AddressFooter {
+        font-size: 16px;
+    }
+
+    .FooterLine2 {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin: 40px 0;
+    }
+}
